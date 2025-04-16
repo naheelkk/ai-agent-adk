@@ -54,4 +54,45 @@ A **filtering expert** that ensures only the best and least saturated ideas are 
 
 ## 📁 Directory Structure
 
+multi_tool_agent/ ├── init.py ├── agent.py # Agent definitions ├── .env # Model and API configurations
+---
+
+## 📌 Notes
+
+- Tools using OpenAI function calling are **not supported**. Only tools that are callable or `BaseTool` instances (like `google_search`) should be passed.
+- Avoid passing entire modules; import specific tool instances.
+
+---
+
+## 📦 Setup
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/naheelkk/ai-agent-adk.git
+   cd ai-agent-adk
+Install dependencies:
+
+pip install -r requirements.txt
+Configure your .env file (e.g., for API keys or model config).
+
+Run the app using the ADK CLI:
+
+bash
+Copy
+Edit
+adk run multi_tool_agent
+✨ Future Improvements
+Add more tools like domain-specific search or trend analysis
+
+Integrate with databases for storing and tracking idea feedback
+
+Web UI for easier interaction
+
+🧑‍💻 Author
+Naheel KK
+
+GitHub: @naheelkk
+
+📜 License
+MIT License
 
