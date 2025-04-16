@@ -1,6 +1,8 @@
 from google.adk.agents import LlmAgent
 from google.adk.tools import google_search
 
+tools=[google_search]
+
 
 MODEL = "gemini-2.0-flash-001"
 
